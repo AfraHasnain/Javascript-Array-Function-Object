@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript-Array-Function-Object</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Javascript-Array-Function-Object</h1>
+      <h4><strong>Check console for output (F12)</strong></h4>
+      <h2>ARRAY</h2>
+      <h3>Q1: Create an array of five numbers and print all elements</h3>
+      <p>let nums = [10, 20, 30, 40, 50]; 
+        console.log(nums);</p>
+
+      <h3>
+        Q2: Create an array of three fruits and print the first and last
+        elements
+      </h3>
+      <p>
+        let fruits = ["Apple", "Strawberry", "Grapes"]; 
+        console.log(fruits[0]);
+        console.log(fruits[2]);
+      </p>
+
+      <h3>Q3: Add "Mango" to the end of an array using push()</h3>
+      <p>
+        let fruit = ["Apple", "Banana", "Orange"];
+         fruit.push("Mango");
+        console.log(fruit);
+      </p>
+
+      <h3>Q4: Find the length of the following array</h3>
+      <p>let numbers = [10, 20, 30, 40, 50]; 
+        console.log(numbers.length);</p>
+
+      <h3>Q5: Write a function that prints "Hello World!"</h3>
+      <p>function sayhello() { 
+        console.log("Hello World!"); 
+    } sayhello();</p>
+
+      <h3>
+        Q6: Write a function that takes two numbers as parameters and prints
+        their sum
+      </h3>
+      <p>function add(a, b) { 
+        console.log(a + b); 
+    } add(5, 10);</p>
+
+      <h3>Q7: Write a function that takes a number and returns its square</h3>
+      <p>function square(num) { return num * num; } console.log(square(4));</p>
+
+      <h3>Q8: Write a function that checks whether a number is even or odd</h3>
+      <p>
+        function checkevenodd(num) { 
+            if (num % 2 == 0) { 
+                console.log("Even"); 
+            } else { 
+                console.log("Odd"); 
+            } 
+        } checkevenodd(7);
+      </p>
+
+      <h3>Q9: Write a function to find the largest of two numbers</h3>
+      <p>
+        function findlargest(a, b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(findlargest(10, 25));
+      </p>
+
+      <h3>
+        Q10: Write a function that takes a name as an argument and prints a
+        welcome message
+      </h3>
+      <p>
+        function welcome(name) { 
+            console.log("Welcome" + " " + name + "!"); 
+        } 
+        welcome("A.H");
+      </p>
+
+      <h2>OBJECT</h2>
+
+      <h3>
+        Q11: Create a student object with name, age, and class properties. Print
+        all three properties
+      </h3>
+      <p>
+        let student1 = {
+    name: "HAYAT",
+    age: 16,
+    class: "10th"
+};
+console.log(student1.name);
+console.log(student1.age);
+console.log(student1.class);
+      </p>
+
+      <h3>
+        Q12: Create a car object with brand, model, and color properties. Print
+        the car's brand.
+      </h3>
+      <p>
+        let car = {
+    brand: "Mercedes-Benz",
+    model: " Electric G-Wagon",
+    color: "Navy-Blue"
+};
+console.log(car.brand);
+
+      </p>
+
+      <h3>
+        Q13: Update the age of the following student object to 20 and print it
+      </h3>
+      <p>
+        let student2 = {
+    name: "Ali",
+    age: 18
+};
+student2.age = 20;
+console.log(student2);
+      </p>
+
+      <h2>Array | Function | Object</h2>
+      <h3>
+        Q14: Write a function that takes an array of numbers and returns the sum
+        of all elements.
+      </h3>
+      <p>
+        function sumarray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+console.log(sumarray([10, 20, 30, 40, 50]));
+      </p>
+
+      <h3>
+        Q15: Create an object for a student with name and marks properties.
+        Write a function that prints the student's name and marks.
+      </h3>
+      <p>
+        let studentdata = {
+    name: "Hayat",
+    marks: 95
+};
+function printstudentinfo(s) {
+    console.log("Name: " + s.name);
+    console.log("Marks: " + s.marks);
+}
+printstudentinfo(studentdata);
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
