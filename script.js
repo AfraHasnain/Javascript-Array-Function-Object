@@ -36,7 +36,7 @@ console.log(square(4));
 
 // Q8: EVEN ODD
 function checkevenodd(num) {
-    if (num % 2 == 0) {
+    if (num % 2 === 0) {
         console.log("Even");
     }
     else {
